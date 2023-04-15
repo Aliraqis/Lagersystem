@@ -1,0 +1,745 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Start Nav CSS */
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #0aa493;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.group {
+  display: flex;
+  align-items: center;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+header ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+
+header ul li a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/*End Nav CSS/*
+
+/*Start Add product form */
+.div_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.div_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.div_title .title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #222222;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.container_form {
+  max-width: 900px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
+}
+
+.container_form .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: #0aa493;
+}
+
+.container_form form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 25px;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+  height: 55px;
+  padding-left: 15px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus {
+  background-color: #f9f7f7;
+}
+
+.user-details .input-box select {
+  height: 55px;
+  padding-left: 5px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box select:focus {
+  background-color: #f9f7f7;
+}
+
+form .form_Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin: 5px 0;
+}
+
+form .form_Btn input {
+  height: 100%;
+  width: 30%;
+  outline: none;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: #0aa493;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+
+form .form_Btn input:hover {
+  background-color: #015d52;
+  transition: 0.5s ease-in-out;
+}
+
+.massage_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #015d52;
+  padding: 15px 45px;
+  border-radius: 20px;
+}
+/*End Add product form */
+
+/*Start Add product page*/
+
+.table_add {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
+}
+
+.table_header {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.table_header p {
+  color: #222;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.table_header button {
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add_new {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #015d52;
+}
+
+.table_add input {
+  padding: 10px 20px;
+  margin: 0 10px;
+  outline: none;
+  border: 0 solid #015d52;
+  border-radius: 6px;
+  color: #222;
+}
+
+.table_add input::placeholder {
+  font-size: 15px;
+
+  color: #727272;
+}
+
+.produkt_table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table_section {
+  height: 650px;
+  overflow: auto;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 50px;
+}
+.table_section table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  min-width: 1400px;
+  max-width: 2400px;
+  background-color: #fff;
+}
+.table_section thead th {
+  position: static;
+  top: 0;
+  background-color: #015d52;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.table_section th,
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 20px;
+  word-break: break-all;
+  text-align: left;
+}
+
+.table_section tbody select {
+  height: 55px;
+  padding-left: 25px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.table_section tbody select option {
+  height: 95px;
+  padding-left: 15px;
+  border-radius: 0px;
+  background-color: #eaeaea;
+}
+
+.table_section th:nth-child(1) {
+  width: 55px;
+}
+.table_section th:nth-child(2) {
+  width: 145px;
+}
+.table_section th:nth-child(3) {
+  width: 350px;
+}
+.table_section th:nth-child(4) {
+  width: 300px;
+}
+.table_section th:nth-child(5) {
+  width: 200px;
+}
+.table_section th:nth-child(6) {
+  width: 130px;
+}
+.table_section th:nth-child(7) {
+  width: 100px;
+}
+.table_section th:nth-child(8) {
+  width: 110px;
+}
+.table_section th:nth-child(9) {
+  width: 200px;
+}
+.table_section th:nth-child(10) {
+  width: 150px;
+}
+
+.sortable {
+  cursor: pointer;
+}
+
+#batch-form {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn_icon {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #0aa493;
+  transform: scaleX(1);
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn_icon:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #005e53;
+  transform: scale(1.2);
+}
+/*Start Add product form */
+.modal {
+  display: none; /* Gömmer modalen från början */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent svart bakgrund */
+}
+
+.modal .div_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+
+.container_form_bach {
+  max-width: 550px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.container_form_bach .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222222;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.container_form_bach .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+
+  background: #0aa493;
+}
+
+.container_form_bach form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 0 12px 0;
+}
+
+.container_form_bach form .user-details .input-box {
+  margin-bottom: 25px;
+  width: calc(100% / 1 - 20px);
+}
+
+.user-details .input-box label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.container_form_bach .user-details .input-box input {
+  height: 50px;
+  padding-left: 15px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.container_form_bach .user-details .input-box input:focus {
+  background-color: #f9f7f7;
+}
+
+.container_form_bach .user-details .input-box select {
+  height: 55px;
+  padding-left: 5px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.container_form_bach .user-details .input-box select:focus {
+  background-color: #f9f7f7;
+}
+
+.container_form_bach form .form_Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin: 5px 0;
+}
+
+.container_form_bach form .form_Btn button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: 0;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: #0aa493;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+
+.container_form_bach form .form_Btn button:hover {
+  background-color: #015d52;
+  transition: 0.5s ease-in-out;
+}
+
+.container_form_bach .massage_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_form_bach .message_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #015d52;
+  padding: 15px 45px;
+  border-radius: 20px;
+}
+
+.close {
+  cursor: pointer;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mas_bach1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mas_bach {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0aa493;
+}
+
+/*Start modal edit */
+.modal-edit {
+  display: none; /* Gömmer modalen från början */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent svart bakgrund */
+}
+
+.modal-edit .div_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+}
+
+.modal-edit .container_form_bach {
+  max-width: 550px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.modal-edit .container_form_bach .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222222;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.modal-edit .container_form_bach .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+
+  background: #0aa493;
+}
+
+.modal-edit .container_form_bach form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 0 12px 0;
+}
+
+.modal-edit .container_form_bach form .user-details .input-box {
+  margin-bottom: 25px;
+  width: calc(100% / 1 - 20px);
+}
+
+.modal-edit .user-details .input-box label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.modal-edit .container_form_bach .user-details .input-box input {
+  height: 50px;
+  padding-left: 15px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.modal-edit .container_form_bach .user-details .input-box input:focus {
+  background-color: #f9f7f7;
+}
+
+.modal-edit .container_form_bach .user-details .input-box select {
+  height: 55px;
+  padding-left: 5px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.modal-edit .container_form_bach .user-details .input-box select:focus {
+  background-color: #f9f7f7;
+}
+
+.modal-edit .container_form_bach form .form_Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin: 5px 0;
+}
+
+.modal-edit .container_form_bach form .form_Btn button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: 0;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: #0aa493;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+
+.modal-edit .container_form_bach form .form_Btn button:hover {
+  background-color: #015d52;
+  transition: 0.5s ease-in-out;
+}
+
+.modal-edit .container_form_bach .massage_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-edit .container_form_bach .message_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #015d52;
+  padding: 15px 45px;
+  border-radius: 20px;
+}
+
+.modal-edit .close-edit {
+  cursor: pointer;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-edit .close-edit:hover,
+.modal-edit .close-edit:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-edit .mas_bach1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-edit .mas_bach {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0aa493;
+}
